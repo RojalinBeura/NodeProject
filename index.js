@@ -1,4 +1,4 @@
-console.log("Jenkins CI Pipeline Running");
+console.log("CI Pipeline Auto Trigger Test");
 
 let a = 20;
 let b = 10;
