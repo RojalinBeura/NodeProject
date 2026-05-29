@@ -1,8 +1,15 @@
-console.log("CI Pipeline Auto Trigger Test");
+const http = require('http');
 
-let a = 20;
-let b = 10;
+const server = http.createServer((req, res) => {
 
-console.log("Addition:", a + b);
-console.log("Multiplication:", a * b);
-console.log("Subtraction:", a - b);
+   res.write("Hello from Jenkins Auto Deployment");
+
+   res.end();
+
+});
+
+server.listen(3000, '0.0.0.0', () => {
+
+   console.log("Server running on port 3000");
+
+});
