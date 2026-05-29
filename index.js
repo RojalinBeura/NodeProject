@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
 
-   res.write("Hello from Jenkins");
+   res.write("Hello from Jenkins dashboard");
 
    res.end();
 
